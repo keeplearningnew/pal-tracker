@@ -2,4 +2,4 @@
 applications:
 - name: pal-tracker
   path: build/libs/pal-tracker.jar
-  host: sukantab-pal-tracker-production
+  host: pritam-pal-tracker-production
