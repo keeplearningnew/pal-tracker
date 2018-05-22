@@ -122,5 +122,6 @@ public class TimeEntryApiTest {
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.CREATED);
 
         return response.getBody().getId();
+
     }
 }
