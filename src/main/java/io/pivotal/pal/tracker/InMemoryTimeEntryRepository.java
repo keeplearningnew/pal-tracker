@@ -42,12 +42,7 @@ public class InMemoryTimeEntryRepository implements TimeEntryRepository{
 
     @Override
     public List<TimeEntry> list() {
-        List<TimeEntry> listTime = new ArrayList<TimeEntry>();
-        for(int i=0;i<this.timeEntryMap.size();i++){
-            TimeEntry t = timeEntryMap.get(i);
-            listTime.add(t);
-        }
-        return listTime;
+        return new ArrayList<>(timeEntryMap.values());
     }
 
     @Override
